@@ -1,0 +1,348 @@
+/* reset css */
+body {
+  margin: 0;
+  font: 12px tahoma, "Microsoft Yahei", "SimSun", sans-serif;
+  min-width: 1170px;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+dl,
+dd {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+strong{
+  font-weight: normal;
+}
+em,
+i {
+  font-style: normal;
+}
+ul,
+ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img{
+    vertical-align: top;
+    border: none;
+}
+input{
+    padding: 0;
+    border: none;
+    outline: none;
+}
+.clearFix {
+  zoom: 1;
+  /* 兼容IE6，7，8 */
+}
+.clearFix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* end reset css */
+
+/* public css */
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*  end public css */
+
+/* header css */
+#header {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 64px;
+  background: #373942;
+}
+.headerBox {
+  width: 1170px;
+  margin: 0 auto;
+  height: 64px;
+  line-height: 64px;
+}
+.headerL {
+  float: left;
+  height: 64px;
+  position: relative;
+}
+.logo {
+  float: left;
+  margin-right: 40px;
+  font-size: 18px;
+}
+.logo a {
+  float: left;
+  color: #e5e9ee;
+}
+.logo a:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin: 7px 5px 0 0;
+  width: 54px;
+  height: 36px;
+  background: url(../images/index/logo.png) no-repeat;
+}
+.navMenu,
+.navMenu li,
+.navMenu a {
+  float: left;
+}
+.navMenu li{
+    position: relative;
+    height: 64px;
+}
+.navMenu {
+  height: 64px;
+}
+.navMenu a {
+  height: 64px;
+  padding: 0 20px;
+  font-size: 14px;
+  color: #e5e9ee;
+}
+.navMenu .open:after,
+.navMenu .doc:after {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 6px;
+  background: url(../images/index/public.png) no-repeat -64px 0;
+}
+.navMenu .open:after {
+  margin: 0 4px;
+}
+.navMenu .doc:after {
+  margin: 0 3px;
+}
+.navMenu a:hover{
+    background: #2b2d34;
+}
+.navMenu li:hover .subNav1,
+.navMenu li:hover .subNav2{
+    display: block;
+}
+.navMenu .open:hover:after,
+.navMenu .doc:hover:after{
+    background: #2b2d34;
+    background: url(../images/index/public.png) no-repeat -82px 0;
+}
+.subNav1,
+.subNav2{
+    display: none;
+    position: absolute;
+    background: #2b2d34;
+}
+.subNav1{
+    left: -116px;
+    top: 64px;
+    width: 865px;
+    height: 340px;
+}
+.subNav2{
+    left: 0;
+    top: 64px;
+    width: 112px;
+}
+.subNav2 a{
+    position: relative;
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    border-bottom: 1px solid #383a45;
+}
+.subNav2 a:hover:before{
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 16px;
+    width: 6px;
+    height: 10px;
+    background: url(../images/index/public.png) no-repeat -102px 0;
+}
+.subMenu{
+    margin: 0 -30px 0 20px;
+}
+.subMenu dl{
+    float: left;
+    width: 140px;
+    margin: 14px 30px 0 0;    
+}
+.subMenu dt{
+    position: relative;
+    height: 58px;
+    line-height: 58px;
+    color: #5eb5fe;
+    text-indent: 46px;
+}
+.subMenu dt a:before{
+    content: "";
+    position: absolute;
+    left: 23px;
+    top: 19px;
+    width: 19px;
+    height: 20px;
+    background: url(../images/index/public.png) no-repeat -118px 0;  
+}
+.subMenu dt a{
+    display: block;
+    padding: 0;
+    height: 58px;
+    color: #5eb5fe;
+}
+.subMenu dd{
+    height: 40px;
+    line-height: 40px;
+    text-indent: 23px;
+    border-bottom: 1px solid #383a45;
+    
+}
+.subMenu dd a{
+    position: relative;
+    padding: 0;
+    display: block;
+    height: 40px;
+    color: #a3a3a3;
+}
+.subMenu dd a:hover,
+.subNav2 a:hover{
+    color: #5eb5fe;
+}
+.subMenu dd a:hover:before,
+.subNav2 a:hover:before{
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 16px;
+    width: 6px;
+    height: 10px;
+    background: url(../images/index/public.png) no-repeat -102px 0;
+}
+.headerR {
+  float: right;
+  height: 64px;
+}
+.headerR a {
+  float: left;
+  height: 64px;
+  line-height: 64px;
+}
+.headerR a em {
+  display: block;
+  vertical-align: top;
+}
+.search em {
+  margin: 23px 25px 23px 0;
+  width: 18px;
+  height: 18px;
+  background: url(../images/index/public.png) no-repeat 0 -36px;
+}
+.clock em {
+  margin: 24px 10px 21px 0;
+  width: 18px;
+  height: 19px;
+  background: url(../images/index/public.png) no-repeat -28px -36px;
+}
+.clock:hover em {
+  background: url(../images/index/public.png) no-repeat -56px -36px;
+}
+.land {
+  -webkit-transition: color 0.3s ease-in;
+  -moz-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+  font-size: 14px;
+  color: #cdd4dc;
+}
+.land:hover {
+  color: #fff;
+}
+/* end header css */
+
+/* footer css */
+#footer{
+    width: 100%;
+    height: 171px;
+    background: #373942;
+}
+#footer .wrap{
+    width: 1140px;
+    padding: 0 7px 0 23px;
+}
+.footerTop{
+    padding: 16px 0 0 0;
+    height: 48px;
+    line-height: 48px;
+    border-bottom: 1px solid #222530;
+}
+.footerTop li{
+    float: left;
+    margin-right: 40px;
+}
+.footerTop i{
+    display: inline-block;
+    width: 14px;
+    height: 11px;
+    margin-right: 4px;
+    background: url(../images/index/public.png) no-repeat -80px -44px;
+}
+.footerTop span,
+.footerTop a{
+    color: #666;
+}
+.footerNav{
+    padding-top: 12px;
+}
+.footerNav a{
+    float: left;
+    margin-right: 40px;
+    line-height: 28px;
+    color: #666;
+}
+/* end footer css */
+
+/* feedback css*/
+#feedback{
+	  position: fixed;
+    top: 50%;
+    right: 50%;
+	  width: 36px; 
+    height: 75px;
+    margin-right: -650px;
+    margin-top: -38px;
+    font-size: 12px;
+    text-align: center; 
+}
+#feedback a{
+	display: block;
+	padding: 8px 0;
+	background: #656565;
+}
+#feedback img{
+	display: block;
+	margin: 0 auto;
+}
+#feedback span{
+	display: block;
+	width: 24px;
+	margin: 0 auto;
+	color: #fff;
+}
+#feedback a:hover{
+	background: #888;
+}
+/* end feedback css */

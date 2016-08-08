@@ -1,0 +1,168 @@
+/* docHeader css */
+#docHeader {
+  width: 100%;
+  height: 80px;
+  background: #0182c1;
+  box-shadow: 0 5px 10px 0 #ddd;
+}
+.docBox {
+  width: 1180px;
+  height: 80px;
+  margin: 0 auto;
+  line-height: 80px;
+}
+.docTitle {
+  float: left;
+  height: 80px;
+}
+.docTitle a,
+.docTitle span {
+  color: #fff;
+}
+.docTitle a:hover {
+  text-decoration: underline;
+}
+.docTitle span {
+  font-family: Arial, "微软雅黑";
+}
+.docSearch {
+  position: relative;
+  float: right;
+  width: 248px;
+}
+.docSearch input {
+  width: 248px;
+  height: 38px;
+  line-height: 38px;
+  border-radius: 3px;
+  text-indent: 10px;
+  color: #84b8d1;
+  background: #1e90c8;
+}
+.docSearch input[type="text"]:focus {
+  background: #fff;
+}
+.docSearch i {
+  position: absolute;
+  right: 9px;
+  top: 32px;
+  width: 19px;
+  height: 18px;
+  background: url(../images/docCenter/icon.png) no-repeat -382px -28px;
+}
+.docSearch input[type="text"]:focus + i {
+  background: url(../images/docCenter/icon.png) no-repeat -382px 0;
+}
+/* end docHeader css */
+/* user css */
+#user {
+  width: 100%;
+}
+#user .wrap {
+  width: 1160px;
+  padding: 0;
+}
+.userCon {
+  margin-right: -40px;
+}
+.userCon dl {
+  float: left;
+  width: 360px;
+  margin-right: 40px;
+}
+.userCon dt {
+  padding-top: 42px;
+  height: 58px;
+  line-height: 58px;
+  font-size: 22px;
+  color: #33336c;
+}
+.userCon dd {
+  height: 54px;
+  font: 14px/54px "微软雅黑";
+  border-bottom: 1px solid #ddd;
+}
+.userCon dd a {
+  color: #0089cd;
+}
+.userCon dd a:hover {
+  text-decoration: underline;
+}
+/* public css */
+.centerTitle {
+  padding-top: 15px;
+  height: 110px;
+  font: 22px/110px "微软雅黑";
+}
+.centeList {
+  margin-right: -40px;
+  overflow: hidden;
+}
+.centeList li {
+  position: relative;
+  float: left;
+  width: 160px;
+  height: 160px;
+  margin-right: 40px;
+  line-height: 158px;
+  text-align: center;
+}
+.centeList a {
+  display: block;
+  width: 158px;
+  height: 158px;
+  border: 1px solid #ddd;
+}
+.centeList a:hover {
+  border-color: #0089cd;
+}
+.centeList a:hover i {
+  background: url(../images/docCenter/icon.png) no-repeat -59px 0;
+}
+.centeList a:hover strong {
+  color: #0089cd;
+}
+.centeList i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: -25px;
+  margin-top: -25px;
+  background: url(../images/docCenter/icon.png) no-repeat 0 0;
+}
+.centeList strong {
+  margin-top: 100px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  color: #666;
+}
+/* end public css */
+/* end user css */
+/* topic css */
+#topic .centeList i {
+  width: 60px;
+  margin-left: -30px;
+  background: url(../images/docCenter/icon.png) no-repeat -118px 0;
+}
+#topic .centeList a:hover i {
+  background: url(../images/docCenter/icon.png) no-repeat -188px 0;
+}
+/* end topic css */
+/* tool css */
+#tool .centeList i {
+  width: 48px;
+  height: 48px;
+  margin-left: -24px;
+  margin-top: -24px;
+  background: url(../images/docCenter/icon.png) no-repeat -259px 0;
+}
+#tool .centeList a:hover i {
+  background: url(../images/docCenter/icon.png) no-repeat -316px 0;
+}
+#tool .centeList {
+  padding-bottom: 50px;
+}
+/* end tool css */

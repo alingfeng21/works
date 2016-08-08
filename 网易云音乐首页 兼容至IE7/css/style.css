@@ -1,0 +1,1178 @@
+/* reset css */
+h1,
+h2,
+h3,
+h4,
+body,
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+em {
+  font-style: normal;
+}
+em,
+strong,
+h1,
+h2 {
+  font-weight: normal;
+}
+input {
+  outline: none;
+  padding: 0;
+  border: none;
+  background: none;
+}
+img {
+  border: none;
+  vertical-align: top;
+}
+body {
+  min-width: 982px;
+  font: 12px Arial, "宋体";
+}
+.clearFix {
+  zoom: 1; /* 兼容ie */
+}
+.clearFix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* end reset css */
+/* conL public css */
+.wrap {
+  width: 982px;
+  margin: 0 auto;
+}
+.header {
+  width: 689px;
+  padding-top: 30px;
+  height: 38px;
+  line-height: 38px;
+  border-bottom: 2px solid #c10d0c;
+}
+.title {
+  position: relative;
+  float: left;
+  padding: 0 20px 0 35px;
+  font: 20px "Microsoft YaHei";
+}
+/* 顶部背景公共区 */
+.title span,
+.more span,
+.logo a,
+.subNav span,
+.msg,
+.topRight .search,
+.searchIco,
+.land span,
+.land:hover span,
+.landList span,
+.landStyle i,
+.styleTel i,
+.styleWeChat i,
+.styleQq i,
+.styleBlog i,
+.styleNetEastEmali i{
+	background: url(../images/icon.png) no-repeat;
+}
+.title span {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+  width: 14px;
+  height: 14px;
+  background-position: -215px -51px;
+}
+.title a {
+  color: #333;
+}
+.secNav {
+  float: left;
+  line-height: 28px;
+}
+.secNav span {
+  margin: 0 10px 0 13px;
+  color: #ccc;
+}
+.secNav a {
+  color: #666;
+}
+.secNav a:hover,
+.header .more:hover{
+	text-decoration: underline;
+}
+.header .more {
+  position: relative;
+  float: right;
+  margin-right: 26px;
+  color: #666;
+}
+.more span {
+  position: absolute;
+  left: 31px;
+  top: 15px;
+  width: 8px;
+  height: 6px;
+  background-position: -218px -76px;
+}
+/* end conL public css */
+/* header css */
+#header {
+  width: 100%;
+}
+.topMenu,
+.menuBox,
+.topLeft{
+	height: 70px;
+}
+.topMenu,
+.mainNav {
+	background: url(../images/repeat_x.png) repeat-x;
+}
+.topMenu {
+  background-position: 0 0;
+}
+/* 导航区域公共样式 */
+.topLeft,
+.logo,
+.subNav,
+.subNav li,
+.subNav li a,
+.subNav li em{
+  float: left;
+}
+.subNav li,
+.subNav .current,
+.subNav .current em,
+.subNav a:hover,
+.subNav a:hover em{
+	background: url(../images/nav_bg.png) no-repeat;
+}
+.subNav li,
+.subNav li a,
+.topRight .search,
+.topRight .landBox{
+	position: relative;
+}
+.subNav span,
+.msg,
+.search input,
+.search span,
+.searchIco,
+.land span,
+.landList,
+.landList span{
+	position: absolute;
+}
+.logo a {
+  display: block;
+  padding: 21px 16px 18px 1px;
+  width: 158px;
+  height: 30px;
+  text-indent: -9999px;
+  background-position: 0 22px;
+  color: #fff;
+}
+.subNav li {
+  background-position: right 33px;
+}
+.subNav .listLast {
+  background: none;
+}
+.subNav .listLast em {
+  padding-right: 40px;
+}
+.subNav li a {
+  z-index: 1;
+  margin-left: -2px;
+  font-size: 14px;
+  color: #ccc;
+}
+.subNav li em {
+  margin-left: 2px;
+  padding: 31px 21px 25px 19px;
+}
+.subNav .current,
+.subNav .current em {
+	background-position: 0 0;
+}
+.subNav .current {
+  background-position: left -42px;
+}
+.subNav .current em {
+  margin-left: 2px;
+  background-position: right -42px;
+}
+.subNav .current span {
+  display: block;
+}
+.subNav a:hover,
+.subNav a:hover em {
+	background-position: 0 0;
+}
+
+.subNav a:hover {
+  background-position: left -122px;
+}
+.subNav a:hover em {
+  z-index: 2;
+  background-position: right -122px;
+}
+.subNav span {
+  /* 三角形 */
+  display: none;
+  left: 50%;
+  bottom: 0;
+  margin-left: -7px;
+  width: 14px;
+  height: 7px;
+  background-position: -186px 0;
+}
+.subNav li a:hover span {
+  display: block;
+}
+.msg {
+  left: 92px;
+  top: 23px;
+  z-index: 2;
+  width: 26px;
+  height: 17px;
+  background-position: -175px -14px;
+}
+.topRight {
+  float: right;
+  height: 70px;
+}
+.topRight .search {
+  float: left;
+  margin: 21px 15px 18px 0;
+  width: 210px;
+  height: 31px;
+  background-position: 0 -52px;
+}
+.search input {
+  width: 200px;
+  padding-left: 33px;
+  line-height: 31px;
+  height: 31px;
+  z-index: 2;
+}
+.search span {
+  left: 33px;
+  top: 8px;
+  color: #9b9b9b;
+  z-index: 1;
+}
+.searchIco {
+  left: 13px;
+  top: 11px;
+  width: 12px;
+  height: 12px;
+  background-position: -216px 0;
+}
+.topRight .landBox {
+  z-index: 3;
+  float: left;
+}
+.land {
+  padding-right: 22px;
+  line-height: 70px;
+  color: #787878;
+}
+.land span {
+  right: 0;
+  top: 32px;
+  width: 10px;
+  height: 9px;
+  background-position: -216px -22px;
+}
+.land:hover span {
+  background-position: -216px -36px;
+}
+.landList {
+  display: none;
+  left: -76px;
+  top: 59px;
+  width: 158px;
+  border: 1px  solid #000;
+  border-radius: 4px;
+}
+.landList span {
+  left: 50%;
+  top: -9px;
+  width: 16px;
+  height: 9px;
+  background-position: -128px -355px;
+}
+.landStyle {
+  float: left;
+  border-radius: 3px;
+  border: 1px solid #404040;
+  background: #2a2a2a;
+}
+.landStyle li {
+  float: left;
+}
+.landStyle li a {
+  position: relative;
+  float: left;
+  padding-left: 45px;
+  width: 132px;
+  height: 38px;
+  line-height: 39px;
+  color: #ccc;
+}
+.landStyle a:hover {
+  text-decoration: none;
+  background: #353535;
+  color: #fff;
+}
+.landStyle i {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 12px;
+  width: 15px;
+  height: 16px;
+}
+.styleTel i {
+  background-position: -150px -352px;
+}
+.styleWeChat i{
+  background-position: -164px -349px;
+}
+.styleQq i {
+  background-position: -129px -368px;
+}
+.styleBlog i{
+  background-position: -149px -371px;
+}
+.styleNetEastEmali i {
+  background-position: -171px -368px;
+}
+.mainNav {
+  height: 35px;
+  background-position: 0 -80px;
+}
+.navMenu {
+  height: 35px;
+  margin-left: 178px;
+}
+.navMenu li,
+.navMenu a {
+  float: left;
+}
+.navMenu li {
+  padding: 0 17px;
+}
+.navMenu a {
+  padding-left: 14px;
+  line-height: 35px;
+  height: 35px;
+  color: #fff;
+  text-shadow: 0 1px 0 #650303;
+}
+.navMenu span {
+  display: inline-block;
+  vertical-align: top;
+  height: 35px;
+  line-height: 35px;
+  padding-right: 14px;
+}
+.navMenu a:hover,
+.navMenu .current_menu,
+.navMenu a:hover span,
+.navMenu .current_menu span {
+	background: url(../images/nav_bg.png) no-repeat;
+}
+.navMenu a:hover,
+.navMenu .current_menu {
+  background-position: left -201px;
+}
+.navMenu a:hover span,
+.navMenu .current_menu span {
+  background-position: right -201px;
+}
+/* end header css */
+/* banner css */
+#banner {
+  width: 100%;
+  height: 336px;
+  background: #1f1f21;
+}
+.bannerBox,
+.bannerL{
+	position: relative;
+}
+
+.bannerL {
+  width: 730px;
+}
+.imgBox {
+  height: 336px;
+}
+.imgBox li {
+  float: left;
+}
+.imgBox img {
+  width: 730px;
+  height: 336px;
+}
+.bannerNav {
+  bottom: 6px;
+  width: 730px;
+  text-align: center;
+}
+/* banner背景图公共样式 */
+.bannerNav a,
+.bannerNav a:hover,
+.bannerNav .currentNav,
+.shadowL,
+.shadowR,
+.btnL,
+.btnR{
+	background: url(../images/banner_icon.png) no-repeat;
+}
+/* banner定位公共样式 */
+.bannerNav,
+.bannerR,
+.down,
+.shadowL,
+.shadowR,
+.btnL,
+.btnR{
+	position: absolute;
+}
+.bannerNav a {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-position: -9px -652px;
+}
+.bannerNav a:hover,
+.bannerNav .currentNav {
+  background-position: -9px -633px;
+}
+.bannerR,
+.down a,
+.down a:hover {
+	background: url(../images/down.png) no-repeat;
+}
+.bannerR {
+  right: 0;
+  top: 0;
+  z-index: 2;
+  width: 251px;
+  height: 336px;
+  border-left: 1px solid #2c2c2c;
+  text-align: center;
+  background-position: 0 0;
+}
+.down {
+  left: 0;
+  bottom: 44px;
+  width: 251px;
+}
+.down a {
+  display: block;
+  margin: 0 auto;
+  width: 215px;
+  height: 58px;
+  text-indent: -9999px;
+  background-position: 0 -429px;
+}
+.down a:hover {
+  background-position: 0 -355px;
+}
+.down p {
+  margin-top: 10px;
+  color: #8d8d8d;
+}
+.shadowL,
+.shadowR {
+  top: 0;
+  width: 20px;
+  height: 336px;
+  background-position: 0 0;
+}
+.shadowL {
+  left: -18px;
+}
+.shadowR {
+  right: -2px;
+}
+.btnL,
+.btnR {
+  top: 50%;
+  width: 36px;
+  height: 63px;
+  margin-top: -31px;
+  background-position: 0 0;
+}
+.btnL {
+  left: -63px;
+  background-position: 0 -424px;
+}
+.btnR {
+  right: -63px;
+  background-position: 1px -559px;
+}
+.btnL:hover {
+  background-position: 0 -345px;
+}
+.btnR:hover {
+  background-position: 1px -497px;
+}
+/* end banner css  */
+/* content css */
+.conBg {
+  width: 100%;
+  background: #f5f5f5;
+}
+#content {
+  background: #fff;
+}
+.conL {
+  float: left;
+  padding: 0 0 40px 20px;
+  width: 709px;
+  border-left: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d3;
+}
+.recommend {
+  width: 699px;
+}
+.recommendList {
+  margin: 20px -43px 0 0;
+}
+.recommendList li {
+  float: left;
+  width: 140px;
+  margin-right: 43px;
+  padding-bottom: 48px;
+}
+.imgCon {
+  position: relative;
+  width: 140px;
+  height: 140px;
+}
+.imgCon a {
+  display: block;
+}
+.imgCon img {
+  width: 140px;
+  height: 140px;
+}
+/* 内容区域公共背景样式 */
+.mark,
+.mark span,
+.mark a,
+.mark a:hover,
+.des em,
+.conBtnL,
+.conBtnR,
+.conBtnL:hover,
+.conBtnR:hover,
+.diskImg,
+.playIco,
+.playIco:hover,
+.playBtn,
+.addBtn,
+.playBtn:hover,
+.addBtn:hover,
+.songPlay,
+.songAdd,
+.songCollect,
+.songPlay:hover,
+.songAdd:hover,
+.songCollect:hover,
+.apply a,
+.apply a:hover,
+.DJ_ico,
+.footerL_ico,
+.footerC_ico,
+.topIcon a,
+.topIcon a:hover,
+.feedback_ico {
+	background: url(../images/con_icon.png) no-repeat;
+}
+
+.mark,
+.mark span {
+	position: absolute;
+}
+.mark {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 27px;
+  background-position: 0 -60px;
+}
+.mark span {
+  left: 10px;
+  top: 9px;
+  width: 0;
+  height: 14px;
+  background-position:  0 0;
+}
+.mark em,
+.des em,
+.des a{
+	float: left;
+}
+.mark em {
+  padding: 6px 0 0 29px;
+  color: #b5c6cc;
+}
+.mark a {
+  float: right;
+  margin: 5px 10px 0 0;
+  width: 16px;
+  height: 17px;
+  background-position: 0 -15px;
+}
+.mark a:hover {
+  background-position: 0 -36px;
+}
+.des {
+  margin-top: 7px;
+  line-height: 19px;
+}
+.des em {
+  margin-right: 7px;
+  width: 34px;
+  height: 15px;
+  background-position: -20px 0;
+}
+.des a {
+  font-size: 14px;
+  color: #000;
+}
+.des a:hover{
+	text-decoration: underline;
+}
+.botImg {
+  width: 690px;
+  height: 76px;
+  margin: 0 auto;
+}
+/* newDisk */
+.diskCon {
+  margin-top: 20px;
+  padding: 1px;
+  width: 687px;
+  height: 186px;
+  border: 1px solid #d3d3d3;
+}
+.con {
+  position: relative;
+  width: 685px;
+  height: 184px;
+  background: #f5f5f5;
+}
+.conBtnL,
+.conBtnR {
+  position: absolute;
+  top: 50%;
+  margin-top: -6px;
+  width: 7px;
+  height: 13px;
+}
+.conBtnL {
+  left: 8px;
+  background-position: -62px 0;
+}
+.conBtnR {
+  right: 8px;
+  background-position: -103px 0;
+}
+.conBtnL:hover {
+  background-position: -82px 0;
+}
+.conBtnR:hover {
+  background-position: -123px 0;
+}
+.conList {
+  width: 632px;
+  padding-top: 28px;
+  margin: 0 auto;
+}
+.conList ul {
+  margin-right: -14px;
+}
+.conList li {
+  float: left;
+  margin-right: 11px;
+  width: 118px;
+  height: 150px;
+  background: url(../images/shadow.png) no-repeat 0 100px;
+}
+.disk {
+  position: relative;
+  margin-bottom: 7px;
+  width: 100px;
+  height: 100px;
+}
+.disk img {
+  width: 100px;
+  height: 100px;
+}
+.diskImg {
+  display: block;
+  width: 118px;
+  height: 100px;
+  background-position: 0 -95px;
+}
+.playIco {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  width: 24px;
+  height: 24px;
+  background-position: -22px -18px;
+}
+.playIco:hover {
+  background-position: -49px -18px;
+}
+.conList p {
+  height: 18px;
+  line-height: 18px;
+}
+.conList p a {
+  color: #000;
+}
+.conList .word a {
+  color: #666;
+}
+.conList p a:hover,
+.conList .word a:hover{
+	text-decoration: underline;
+}
+
+/* musicList css */
+.listCon {
+  margin-top: 20px;
+  width: 687px;
+  height: 470px;
+}
+.listBox,
+.listBox > li {
+	border-top: 1px solid #d3d3d3;
+}
+
+.listBox {
+  border-bottom: 2px solid #d3d3d3;
+}
+.listBox > li {
+  float: left;
+  width: 228px;
+  height: 468px;
+  background: #f4f4f4;
+}
+.listTop {
+  margin: 18px 0 0 18px;
+}
+.topL a,
+.topL {
+  float: left;
+  padding: 0 5px;
+  width: 80px;
+  height: 99px;
+}
+.topL img {
+  width: 80px;
+  height: 80px;
+}
+.topL a {
+  background: url(../images/shadow.png) no-repeat -123px 79px;
+}
+.topR {
+  float: left;
+  margin-left: 10px;
+}
+.btn {
+  margin-top: 11px;
+}
+.topTitle {
+  font-size: 14px;
+  color: #000;
+}
+.topTitle:hover{
+	text-decoration: underline;
+}
+.playBtn {
+  float: left;
+  margin-right: 10px;
+  width: 22px;
+  height: 22px;
+  background-position: -80px -18px;
+}
+.addBtn {
+  float: left;
+  margin-top: 2px;
+  width: 20px;
+  height: 19px;
+  background-position: 0 -200px;
+}
+.playBtn:hover {
+  background-position: -109px -18px;
+}
+.addBtn:hover {
+  background-position: -26px -200px;
+}
+/* listItem */
+.listItem li {
+  float: left;
+  position: relative;
+  padding: 0;
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+}
+.listItem li:hover .songBtn {
+  display: block;
+}
+.listItem li:hover .ellipsis {
+  width: 102px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.listItem li .hotNum,
+.listItem li span {
+  float: left;
+  width: 35px;
+  height: 32px;
+  text-align: center;
+  padding-left: 18px;
+  font-size: 16px;
+  color: #666;
+}
+.listItem li .hotNum {
+  color: #c10d0c;
+}
+.songTitle {
+  float: left;
+  width: 170px;
+  color: #000;
+}
+.songTitle:hover{
+	text-decoration: underline;
+}
+.songPlay,
+.songAdd,
+.songCollect {
+  float: left;
+  width: 17px;
+  height: 17px;
+}
+.songBtn {
+  display: none;
+  position: absolute;
+  right: 13px;
+  top: 7px;
+  width: 66px;
+  height: 17px;
+}
+.songPlay {
+  margin-right: 10px;
+  background-position: -55px -202px;
+}
+.songAdd {
+  margin-right: 4px;
+  background-position: 0 -224px;
+}
+.songCollect {
+  background-position: -101px -203px;
+}
+.songPlay:hover {
+  background-position: -80px -202px;
+}
+.songAdd:hover {
+  background-position: -22px -224px;
+}
+.songCollect:hover {
+  background-position: -123px -203px;
+}
+.listBox .addNum {
+  background: #e8e8e8;
+}
+.watch {
+  float: right;
+  margin-right: 29px;
+  color: #000;
+}
+.watch:hover{
+	text-decoration: underline;
+}
+/* end conL css */
+/* conR css */
+.conR {
+  float: left;
+  border-right: 1px solid #d3d3d3;
+}
+.singerInfo li,
+.infoImg,
+.infoDes,
+.DJImg,
+.DJDes{
+	float: left;
+}
+
+.register,
+.regBtn,
+.regBtn:hover {
+	background: url(../images/register_icon.png) no-repeat;
+}
+
+.register {
+  width: 250px;
+  height: 126px;
+  background-position: 0 0;
+}
+.landDis {
+  padding: 16px 22px;
+  line-height: 22px;
+  color: #666;
+}
+.regBtn {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 32px;
+  line-height: 32px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 0 #8a060b;
+  background-position: 0 -139px;
+}
+.regBtn:hover {
+  text-decoration: none;
+  background-position: -110px -139px;
+}
+.checkSinger {
+  margin: 0 auto;
+  width: 210px;
+}
+/* conR public css */
+.conRHeader {
+  padding-top: 8px;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #ccc;
+}
+.conRTtitle {
+  float: left;
+  color: #000;
+}
+.conRMore {
+  float: right;
+  color: #666;
+}
+/* end conR public css */
+.singerInfo {
+  margin-top: 6px;
+}
+.singerInfo li {
+  margin-top: 14px;
+  width: 100%;
+}
+.infoImg,
+.infoImg img {
+  width: 62px;
+  height: 62px;
+}
+.infoDes {
+  width: 147px;
+  border: 1px solid #e9e9e9;
+  border-left: none;
+  background: #fafafa;
+  cursor: pointer;
+}
+.infoDes:hover {
+  background: #f4f4f4;
+}
+.song {
+  padding-left: 16px;
+  line-height: 32px;
+  fonts-size: 14px;
+  color: #000;
+}
+.singer {
+  line-height: 22px;
+  padding: 0 0 6px 16px;
+}
+.apply a {
+  display: block;
+  width: 210px;
+  height: 31px;
+  line-height: 31px;
+  text-align: center;
+  color: #000;
+  background-position: 0 -260px;
+}
+.apply a:hover {
+  text-decoration: none;
+  background-position: 0 -303px;
+}
+.DJList {
+  padding-top: 10px;
+}
+.hotDJ {
+  width: 210px;
+  margin: 0 auto;
+}
+.DJList li {
+  width: 100%;
+  margin-top: 10px;
+}
+.DJImg,
+.DJImg img {
+  width: 40px;
+  height: 40px;
+}
+.DJDes {
+  padding-left: 10px;
+  width: 160px;
+  height: 40px;
+}
+.DJSinger {
+  position: relative;
+  padding-top: 6px;
+  display: block;
+  height: 18px;
+  color: #000;
+}
+.DJSinger:hover{
+	text-decoration: underline;
+}
+.DJ_ico {
+  position: absolute;
+  left: 26px;
+  top: 7px;
+  width: 11px;
+  height: 12px;
+  background-position: -44px -228px;
+}
+.DJCall {
+  padding-top: 1px;
+  color: #666;
+  width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* end conR css */
+/* footer css */
+#footer {
+  width: 100%;
+  height: 125px;
+  background: #f9f9f9;
+  border-top: 1px solid #d8d8d8;
+}
+.footerBox {
+  padding: 29px 0 52px 0;
+}
+.footerL,
+.footerC {
+  position: relative;
+  float: left;
+  width: 246px;
+  padding-left: 54px;
+  line-height: 22px;
+}
+.footerL_ico,
+.footerC_ico{
+	position: absolute;
+    left: 9px;
+    top: 2px;
+	height: 37px;
+}
+
+.footerL_ico {
+  width: 37px;
+  background-position: 0 -348px;
+}
+.footerC_ico {
+  width: 33px;
+  background-position: -45px -348px;
+}
+.wordTop,
+.wordBot{
+	display: block;
+}
+
+.wordTop {
+  color: #000;
+}
+.wordBot {
+  color: #999;
+}
+.footerR {
+  float: left;
+  padding: 4px 0 52px 0;
+  line-height: 22px;
+}
+.footerNav {
+  height: 22px;
+}
+.footerNav a,
+.footerNav span {
+  float: left;
+  padding-right: 2px;
+  color: #9b9b9b;
+}
+.footerNav a:hover,
+.copyDes:hover,
+.feedback:hover {
+	text-decoration: underline;
+}
+.footerNav span {
+  padding-left: 2px;
+}
+.copy {
+  height: 22px;
+}
+.copy span,
+.copyDes {
+  float: left;
+  color: #9b9b9b;
+}
+.feedback {
+  position: relative;
+  float: right;
+  color: #9b9b9b;
+}
+.feedback_ico {
+  position: absolute;
+  left: -25px;
+  top: 3px;
+  width: 20px;
+  height: 16px;
+  background-position: -88px -356px;
+}
+.topIcon {
+  position: fixed;
+  right: 137px;
+  bottom: 0;
+}
+.topIcon a {
+  display: block;
+  width: 47px;
+  height: 43px;
+  background-position: -163px 0;
+}
+.topIcon a:hover {
+  background-position: -163px -46px;
+}
+/* end footer css */

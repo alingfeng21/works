@@ -1,0 +1,495 @@
+/* banner css */
+#banner {
+  position: relative;
+  width: 100%;
+  height: 476px;
+  overflow: hidden;
+  background: #000;
+}
+.bannerList { 
+  width: 100%;
+  height: 476px; 
+}
+.bannerList li {
+  float: left;
+  width: 100%;
+  height: 476px;
+}
+.bannerList li a{
+	display: block;
+	height: 476px;
+	background: url(../images/index/banner_img1.png) no-repeat center center;
+}
+.bannerBtn {
+  position: absolute;
+  left: 0;
+  bottom: 32px;
+  width: 100%;
+  text-align: center;
+}
+.bannerBtn li {
+  margin: 1px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.currentBtn {
+  background: #fff;
+}
+/* end banner css */
+/*  notice css */
+.noticeCon {
+  margin-bottom: 82px;
+}
+.noticeHeader {
+  padding: 15px 15px 15px 18px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.headerCon {
+  float: left;
+}
+.headerCon em {
+  display: inline-block;
+  margin: 0 15px 0 14px;
+  vertical-align: middle;
+  width: 20px;
+  height: 15px;
+  background: url(../images/index/icon.png) no-repeat 0 0;
+}
+.headerCon a {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 159px;
+  padding-right: 23px;
+  margin-right: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #666;
+}
+.headerCon i {
+  position: absolute;
+  right: 0;
+  top: 3px;
+  width: 23px;
+  height: 9px;
+  background: url(../images/index/icon.png) no-repeat -31px 0;
+}
+.headerCon a:hover {
+  text-decoration: underline;
+}
+.more {
+  float: right;
+  margin-right: 23px;
+  color: #5eb5fe;
+}
+.noticeDetails {
+  margin: 39px -16px 0 32px;
+}
+.noticeDetails li {
+  margin: 0 38px;
+  padding-bottom: 45px;
+}
+.noticeDetails li,
+.noticeDetails a {
+  float: left;
+  width: 194px;
+}
+.noticeDetails a {
+  text-align: center;
+}
+.noticeDetails a:hover strong,
+.noticeDetails a:hover span {
+  color: #337ab7;
+}
+.noticeDetails strong {
+  display: block;
+  font-size: 20px;
+  height: 46px;
+  line-height: 44px;
+  color: #444;
+}
+.noticeDetails span {
+  display: block;
+  line-height: 24px;
+  margin: 0 auto;
+  color: #666;
+}
+.notcieBot {
+  width: 100%;
+  text-align: center;
+}
+.notcieBot dt {
+  vertical-align: middle;
+}
+.notcieBot dt,
+.notcieBot dd {
+  display: inline-block;
+  margin-right: 21px;
+  color: #333;
+}
+.notcieBot i,
+.notcieBot a {
+  display: inline-block;
+  vertical-align: middle;
+  color: #333;
+}
+.notcieBot i {
+  margin-right: 3px;
+  width: 33px;
+  height: 18px;
+  background: url(../images/index/icon.png) no-repeat -64px 0;
+}
+/* end notice css */
+/* advantage css */
+#advantage {
+  width: 100%;
+  height: 520px;
+  background: url(../images/index/advantage.png) no-repeat;
+  background-size: cover;
+}
+/* public_header page header */
+.headerTitle {
+  padding-top: 15px;
+  height: 76px;
+  line-height: 76px;
+  font-size: 22px;
+  color: #fff;
+}
+.headerTitle:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 23px;
+  height: 21px;
+  background: url(../images/index/icon.png) no-repeat -107px 0;
+}
+/* end public_header page header */
+.advantageCon {
+  width: 602px;
+  margin: 20px 0 0 358px;
+}
+.advantageCon li {
+  float: left;
+  width: 30%;
+}
+.advantageCon a {
+  display: block;
+  font-size: 14px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.business {
+  display: block;
+  margin: 0 auto 16px;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #acafb4;
+}
+.business span {
+  display: inline-block;
+  width: 26px;
+  height: 20px;
+  margin-top: 10px;
+  background: url(../images/index/icon.png) no-repeat -140px 0;
+}
+.advantageCon strong {
+  position: relative;
+  display: inline-block;
+  padding: 0 8px;
+  border-radius: 3px;
+  line-height: 30px;
+  height: 30px;
+  color: #fff;
+}
+.advantageCon strong:before {
+  content: "";
+  display: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 50%;
+  top: -14px;
+  margin-left: -6px;
+  border: 7px solid #1e2736;
+  border-color: transparent transparent #1e2736;
+}
+.advantageCon .current strong,
+.advantageCon a:hover strong {
+  background: #1e2736;
+}
+.advantageCon .current strong:before,
+.advantageCon a:hover strong:before {
+  display: block;
+}
+.advantageCon .current span,
+.advantageCon a:hover span {
+  background: url(../images/index/icon.png) no-repeat -177px 0;
+}
+.subCon1 {
+  width: 1140;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.subConL {
+  float: left;
+  margin: 62px 0 95px 90px;
+  width: 495px;
+}
+.subConL li {
+  position: relative;
+  padding-left: 10px;
+  height: 35px;
+  line-height: 35px;
+  color: #fff;
+}
+.subConL li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  margin-top: -3px;
+  vertical-align: middle;
+  background: #fff;
+  border-radius: 50%;
+}
+.subConR {
+  float: left;
+  width: 455px;
+  height: 226px;
+  margin-top: 30px;
+}
+.subCon2,
+.subCon3 {
+  display: none;
+}
+/* end advantage css */
+/* skill css */
+#skill .headerTitle {
+  padding-top: 36px;
+  color: #333;
+}
+#skill .headerTitle:before {
+  background: url(../images/index/icon.png) no-repeat -93px -27px;
+}
+.ability p {
+  padding: 22px 0 32px 0;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  font-size: 14px;
+  color: #7c7c7c;
+}
+.skillShow {
+  width: 750px;
+  margin: 0 auto 112px;
+}
+.skillShow li {
+  float: left;
+  width: 139px;
+  height: 165px;
+  margin-right: 10px;
+  background: url(../images/index/skill_bg.png) no-repeat 0 0;
+}
+.skillShow a {
+  width: 139px;
+  height: 158px;
+  text-align: center;
+  display: block;
+}
+.step1 {
+  display: block;
+  padding-top: 47px;
+}
+.step1 i {
+  display: block;
+  font-size: 34px;
+  line-height: 48px;
+  color: #ccc;
+}
+.step1 em {
+  display: block;
+  width: 56px;
+  height: 26px;
+  margin: 0 auto;
+  border-top: 1px solid #ccc;
+  color: #64a3ef;
+}
+.step2 {
+  display: none;
+  line-height: 18px;
+  padding: 68px 0;
+}
+.skillShow .item {
+  background: url(../images/index/skill_bg.png) no-repeat 0 -191px;
+}
+.skillShow .item6 {
+  margin-left: 74px;
+}
+.skillShow .item6,
+.skillShow .item7,
+.skillShow .item8 {
+  margin-top: -34px;
+}
+/* end skill css */
+/* basicCloud css */
+#basicCloud {
+  margin-bottom: 90px;
+}
+#basicCloud .headerTitle {
+  padding: 0;
+  height: 72px;
+  line-height: 72px;
+  color: #333;
+}
+#basicCloud .headerTitle:before {
+  margin-right: 9px;
+  width: 26px;
+  background: url(../images/index/icon.png) no-repeat -126px -27px;
+}
+.plan {
+  margin-right: -32px;
+  height: 420px;
+}
+.planConL,
+.planConR {
+  float: left;
+  width: 556px;
+  height: 420px;
+  margin-right: 30px;
+}
+.planConL {
+  background: url(../images/index/img1.png) no-repeat;
+  background-size: cover;
+}
+.planstep1 {
+  width: 100%;
+  padding-top: 157px;
+  text-align: center;
+  color: #fff;
+}
+.planstep1 strong {
+  font-size: 32px;
+  line-height: 54px;
+}
+.planstep1 p {
+  font-size: 16px;
+  line-height: 38px;
+  height: 38px;
+}
+.planstep2 {
+  position: relative;
+  height: 395px;
+  padding-top: 27px;
+}
+.planstep2 ul {
+  margin-left: 19px;
+}
+.planstep2 li {
+  position: relative;
+  padding: 15px 0 15px 50px;
+}
+.planstep2 li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 16px;
+  width: 38px;
+  height: 38px;
+}
+.planstep2 .step2-1:before,
+.planstep2 .step2-2:before,
+.planstep2 .step2-3:before,
+.planstep2 .step2-4:before {
+  background: url(../images/index/icon.png) no-repeat 0 -27px;
+}
+.planstep2 span {
+  color: #7fc2f6;
+}
+.planstep2 span,
+.planstep2 p {
+  line-height: 22px;
+}
+.planstep2 p {
+  color: #eae8e9;
+}
+.moreBtn {
+  position: absolute;
+  left: 35%;
+  bottom: 33px;
+  height: 44px;
+  line-height: 44px;
+  font-size: 14px;
+  border: 1px solid #3199f4;
+  background: #467094;
+  padding: 0 40px;
+  color: #fff;
+}
+.moreBtn:hover {
+  background: #2c7fca;
+}
+.planConL .planstep2 {
+  display: none;
+}
+.planConR {
+  background: url(../images/index/img1.png) no-repeat;
+  background-size: cover;
+}
+.planConR .planstep1 {
+  display: none;
+}
+/* end basicCloud css*/
+/*  partner css */
+#partner {
+  width: 100%;
+  height: 247px;
+  background: url(../images/index/partner_bg.png) repeat-x;
+}
+#partner .headerTitle {
+  padding-top: 14px;
+  color: #333;
+}
+#partner .headerTitle:before {
+  width: 36px;
+  height: 26px;
+  background: url(../images/index/icon.png) no-repeat -48px -27px;
+}
+.partnerShow {
+  margin-right: -30px;
+  padding: 19px 0 55px 0;
+  height: 83px;
+}
+.partnerShow li {
+  float: left;
+  width: 164px;
+  height: 83px;
+  margin-right: 30px;
+}
+.partnerShow li a {
+  display: block;
+  width: 164px;
+  height: 83px;
+}
+.partnerShow img {
+  display: none;
+}
+.partnerShow .show1 {
+  display: block;
+}
+.partnerShow a:hover .show1 {
+  display: none;
+}
+.partnerShow a:hover .show2 {
+  display: block;
+}
+/*  end partner css */

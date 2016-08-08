@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			//动态设置视口
+			//设置缩放比例
+			var scale = 1;
+			if(window.devicePixelRatio){
+				scale = scale / window.devicePixelRatio;
+			};
+			document.write('<meta name="viewport" content="width=device-width,initial-scale='+scale+',minimum-scale='+scale+',maximum-scale='+scale+',user-scalable=no" />');
+		</script>
+		<script>
+			//动态设置rem
+			toSize ();
+			function toSize () {
+				var html = document.getElementsByTagName("html")[0];
+				var screenW = html.getBoundingClientRect().width; 
+				html.style.fontSize = screenW/15 + "px";
+			}
+			window.addEventListener(
+				"orientationchange",
+				function(){
+					//横竖屏切换之后，会执行这里边的代码
+					toSize ();
+				},
+				false
+			);
+			window.addEventListener(
+				"resize",
+				function(){
+					//横竖屏切换之后，会执行这里边的代码
+					toSize ();
+				},
+				false
+			);
+		</script>
+		
+	</head>
+	<link rel="stylesheet" href="css/index.css"/>
+	<body>
+		<header id="header">
+			<a class="menuBtn" href=""></a>
+			<div class="search">
+				<div class="searchBox">
+					<form action="">
+						<div class="tips">搜索商品/店铺</div>
+						<div class="searchIco"></div>
+					</form>
+				</div>
+			</div>
+			<a class="land" href="">登录</a>
+		</header>
+		<section id="pageMain">
+			<div class="banner">
+				<div class="bannerImg">
+					<ul class="imgList clearfix">
+						<li>
+							<a href="">
+								<img src="images/banner1.png" alt="" />
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/banner1.png" alt="" />
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/banner1.png" alt="" />
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/banner1.png" alt="" />
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/banner1.png" alt="" />
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/banner1.png" alt="" />
+							</a>
+						</li>
+					</ul>
+				</div>	
+				<ol class="bannerBtn clearfix">
+					<li class="currentBtn"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+			</div>
+			<div class="subNabArea">
+				<ul class="subNav clearfix">
+					<li>
+						<a href="#">
+							<img src="images/subNav1.png" alt="" />
+							<span>积分乐园</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/subNav1.png" alt="" />
+							<span>积分乐园</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/subNav1.png" alt="" />
+							<span>积分乐园</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/subNav1.png" alt="" />
+							<span>积分乐园</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/subNav1.png" alt="" />
+							<span>积分乐园</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/subNav1.png" alt="" />
+							<span>积分乐园</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/subNav1.png" alt="" />
+							<span>积分乐园</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/subNav1.png" alt="" />
+							<span>积分乐园</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/subNav1.png" alt="" />
+							<span>积分乐园</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/subNav1.png" alt="" />
+							<span>积分乐园</span>
+						</a>
+					</li>
+				</ul>
+				<div class="hotArea">
+					<div class="hotL">
+						<img src="images/hotImg.png" alt="" />
+					</div>
+					<div class="hotCon">
+						<ul class="hotList">
+							<li>
+								<a href="">
+									<span>金龙鱼热销买2送1，满128元减30元</span>
+									<strong>买2付1+第2件半价</strong>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="selHall">
+				<header class="selImg">
+					<a href="">
+						<img src="images/selTitle.png" alt="" />
+						<img src="images/selHall.png" alt="" />
+					</a>
+				</header>
+				<ul class="selList clearfix">
+					<li>
+						<a href="">
+							<img src="images/sel_img1.png" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/sel_img1.png" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/sel_img1.png" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/sel_img1.png" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/sel_img1.png" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/sel_img1.png" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/sel_img1.png" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/sel_img1.png" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/sel_img1.png" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/sel_img1.png" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/sel_img1.png" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/sel_img1.png" alt="" />
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="special">
+				<ul class="video clearfix">
+					<li>
+						<a href="">
+							<img src="images/video_img1.png" alt="" />
+						</a>
+					</li><li>
+						<a href="">
+							<img src="images/video_img2.png" alt="" />
+						</a>
+					</li>
+				</ul>
+				<div class="rush">
+					<div class="titleHeader">
+						<span class="lineL"></span>
+						<span class="text">必抢</span>
+						<span class="lineR"></span>
+					</div>
+					<ul class="rushList clearfix">
+						<li>
+							<a href="">
+								<span class="listTitle">巨超值</span>
+								<img src="images/rush_img1.png" alt="" />
+								<span class="price"><em>￥108</em><i>￥330</i></span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="listTitle">巨超值</span>
+								<img src="images/rush_img1.png" alt="" />
+								<span class="price"><em>￥108</em><i>￥330</i></span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="listTitle">巨超值</span>
+								<img src="images/rush_img1.png" alt="" />
+								<span class="price"><em>￥108</em><i>￥330</i></span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="listTitle">巨超值</span>
+								<img src="images/rush_img1.png" alt="" />
+								<span class="price"><em>￥108</em><i>￥330</i></span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="listTitle">商场同款</span>
+								<img src="images/rush_img2.png" alt="" />
+								<span class="price"><em>￥429</em><i>￥590</i></span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="listTitle">商场同款</span>
+								<img src="images/rush_img2.png" alt="" />
+								<span class="price"><em>￥429</em><i>￥590</i></span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="listTitle">商场同款</span>
+								<img src="images/rush_img2.png" alt="" />
+								<span class="price"><em>￥429</em><i>￥590</i></span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="listTitle">商场同款</span>
+								<img src="images/rush_img2.png" alt="" />
+								<span class="price"><em>￥429</em><i>￥590</i></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="fashion">
+					<div class="titleHeader">
+						<span class="lineL"></span>
+						<span class="text">时尚范</span>
+						<span class="lineR"></span>
+					</div>
+					<ul class="productList clearfix">
+						<li>
+							<a href="">
+								<img src="images/fashion_img1.png" alt="" />
+							</a>
+						</li><li>
+							<a href="">
+								<img src="images/fashion_img1.png" alt="" />
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/fashion_img1.png" alt="" />
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/fashion_img1.png" alt="" />
+							</a>
+						</li>
+					</ul>
+					<div class="focusImg">
+						<a href="">
+							<img src="images/summer_new.png" alt="" />
+						</a>
+					</div>
+					<div class="life">
+						<div class="titleHeader">
+							<span class="lineL"></span>
+							<span class="text">爱生活</span>
+							<span class="lineR"></span>
+						</div>
+						<ul class="productList clearfix">
+							<li>
+								<a href="">
+									<img src="images/life_img1.png" alt="" />
+								</a>
+							</li><li>
+								<a href="">
+									<img src="images/life_img1.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/life_img1.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/life_img1.png" alt="" />
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="trend">
+						<div class="titleHeader">
+							<span class="lineL"></span>
+							<span class="text">潮流酷玩</span>
+							<span class="lineR"></span>
+						</div>
+						<ul class="productList clearfix">
+							<li>
+								<a href="">
+									<img src="images/trend_img.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/trend_img.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/trend_img.png" alt="" />
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="news">
+						<div class="titleHeader">
+							<span class="lineR"></span>
+						</div>
+						<ul class="productList clearfix">
+							<li>
+								<a href="">
+									
+									<img src="images/news_img1.png" alt="" />
+								</a>
+							</li><li>
+								<a href="">
+									
+									<img src="images/news_img1.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									
+									<img src="images/news_img1.png" alt="" />
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="brandSale">
+						<div class="titleHeader">
+							<span class="lineL"></span>
+							<span class="text">品牌特卖</span>
+							<span class="lineR"></span>
+						</div>
+						<ul class="saleList">
+							<li>
+								<a href="">
+									<img src="images/brandSale_img1.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/brandSale_img2.png" alt="" />
+								</a>
+							</li>
+						</ul>
+						<div class="focusImg">
+							<a href="">
+								<img src="images/red_box.png" alt="" />
+							</a>
+						</div>
+					</div>
+					<div class="hotIndustry">
+						<div class="titleHeader">
+							<span class="lineL"></span>
+							<span class="text">热门行业</span>
+							<span class="lineR"></span>
+						</div>
+						<ul class="productList clearfix">
+							<li>
+								<a href="">
+									<strong>电器城</strong>
+									<span>10元抢百元券</span>
+									<img class="hotIco" src="images/hotIco.png" alt="" />
+								</a>
+							</li><li>
+								<a href="">
+									<img class="hotIndustry_img1" src="images/hotIndustry_img1.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<strong>天猫女装</strong>
+									<span>精选好货</span>
+									<img class="hotIco" src="images/hotIco.png" alt="" />
+								</a>
+							</li><li>
+								<a href="">
+									<img class="hotIndustry_img2" src="images/hotIndustry_img2.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<strong>运动户外</strong>
+									<span>FILA首发</span>
+									<img class="hotIndustry_img3" src="images/hotIndustry_img3.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<strong>运动户外</strong>
+									<span>FILA首发</span>
+									<img class="hotIndustry_img3" src="images/hotIndustry_img3.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<strong>运动户外</strong>
+									<span>FILA首发</span>
+									<img class="hotIndustry_img3" src="images/hotIndustry_img3.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<strong>运动户外</strong>
+									<span>FILA首发</span>
+									<img class="hotIndustry_img3" src="images/hotIndustry_img3.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<strong>运动户外</strong>
+									<span>FILA首发</span>
+									<img class="hotIndustry_img3" src="images/hotIndustry_img3.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<strong>运动户外</strong>
+									<span>FILA首发</span>
+									<img class="hotIndustry_img3" src="images/hotIndustry_img3.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<strong>运动户外</strong>
+									<span>FILA首发</span>
+									<img class="hotIndustry_img3" src="images/hotIndustry_img3.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<strong>运动户外</strong>
+									<span>FILA首发</span>
+									<img class="hotIndustry_img3" src="images/hotIndustry_img3.png" alt="" />
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="flagship">
+						<div class="titleHeader">
+							<span class="lineL"></span>
+							<span class="text">品牌旗舰</span>
+							<span class="lineR"></span>
+						</div>
+						<ul class="flagshipList clearfix">
+							<li>
+								<a href="">
+									<span class="itemL">
+										<img src="images/flagship_img1.png" alt="" />
+									</span>
+									<span class="itemR">
+										<img src="images/flagship_img2.png" alt="" />
+										<img src="images/flagship_img3.png" alt="" />
+									</span>
+									<span class="info">
+										<strong>卡仕达官方旗舰店</strong>
+										<i>2.0 万粉丝</i>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="itemL">
+										<img src="images/flagship_img1.png" alt="" />
+									</span>
+									<span class="itemR">
+										<img src="images/flagship_img2.png" alt="" />
+										<img src="images/flagship_img3.png" alt="" />
+									</span>
+									<span class="info">
+										<strong>卡仕达官方旗舰店</strong>
+										<i>2.0 万粉丝</i>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="itemL">
+										<img src="images/flagship_img1.png" alt="" />
+									</span>
+									<span class="itemR">
+										<img src="images/flagship_img2.png" alt="" />
+										<img src="images/flagship_img3.png" alt="" />
+									</span>
+									<span class="info">
+										<strong>卡仕达官方旗舰店</strong>
+										<i>2.0 万粉丝</i>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="itemL">
+										<img src="images/flagship_img1.png" alt="" />
+									</span>
+									<span class="itemR">
+										<img src="images/flagship_img2.png" alt="" />
+										<img src="images/flagship_img3.png" alt="" />
+									</span>
+									<span class="info">
+										<strong>卡仕达官方旗舰店</strong>
+										<i>2.0 万粉丝</i>
+									</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="theme">
+						<div class="titleHeader">
+							<span class="lineL"></span>
+							<span class="text">主题市场</span>
+							<span class="lineR"></span>
+						</div>
+						<ul class="productList clearfix">
+							<li>
+								<a href="">
+									<strong>hold女神</strong>
+									<span>国民老公</span>
+									<img src="images/theme_img1.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<strong>hold女神</strong>
+									<span>国民老公</span>
+									<img src="images/theme_img1.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<strong>hold女神</strong>
+									<span>国民老公</span>
+									<img src="images/theme_img1.png" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<strong>hold女神</strong>
+									<span>国民老公</span>
+									<img src="images/theme_img1.png" alt="" />
+								</a>
+							</li>
+						</ul>
+					</div>
+					<ul class="guessLike">
+						<div class="titleHeader">— 猜你喜欢 —</div>
+						<ul class="likeList clearfix">
+							<li>
+								<a href="">
+									<img src="images/guessLick_img1.png" alt="" />
+									<span class="des">[热销]正品耐克Nike Air Presto2016新款黑白武士</span>
+									<span class="desPrice">
+										<em class="mark1">¥</em>
+										<em class="mark2">699</em>
+										<i class="mark3">.0</i>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/guessLick_img1.png" alt="" />
+									<span class="des">[热销]正品耐克Nike Air Presto2016新款黑白武士</span>
+									<span class="desPrice">
+										<em class="mark1">¥</em>
+										<em class="mark2">699</em>
+										<i class="mark3">.0</i>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/guessLick_img1.png" alt="" />
+									<span class="des">[热销]正品耐克Nike Air Presto2016新款黑白武士</span>
+									<span class="desPrice">
+										<em class="mark1">¥</em>
+										<em class="mark2">699</em>
+										<i class="mark3">.0</i>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/guessLick_img1.png" alt="" />
+									<span class="des">[热销]正品耐克Nike Air Presto2016新款黑白武士</span>
+									<span class="desPrice">
+										<em class="mark1">¥</em>
+										<em class="mark2">699</em>
+										<i class="mark3">.0</i>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/guessLick_img1.png" alt="" />
+									<span class="des">[热销]正品耐克Nike Air Presto2016新款黑白武士</span>
+									<span class="desPrice">
+										<em class="mark1">¥</em>
+										<em class="mark2">699</em>
+										<i class="mark3">.0</i>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/guessLick_img1.png" alt="" />
+									<span class="des">[热销]正品耐克Nike Air Presto2016新款黑白武士</span>
+									<span class="desPrice">
+										<em class="mark1">¥</em>
+										<em class="mark2">699</em>
+										<i class="mark3">.0</i>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/guessLick_img1.png" alt="" />
+									<span class="des">[热销]正品耐克Nike Air Presto2016新款黑白武士</span>
+									<span class="desPrice">
+										<em class="mark1">¥</em>
+										<em class="mark2">699</em>
+										<i class="mark3">.0</i>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="images/guessLick_img1.png" alt="" />
+									<span class="des">[热销]正品耐克Nike Air Presto2016新款黑白武士</span>
+									<span class="desPrice">
+										<em class="mark1">¥</em>
+										<em class="mark2">699</em>
+										<i class="mark3">.0</i>
+									</span>
+								</a>
+							</li>
+						</ul>
+						<div class="load">
+							<a href="">
+								<img src="images/load_end.png" alt="" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

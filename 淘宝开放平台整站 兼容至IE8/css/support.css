@@ -1,0 +1,196 @@
+/* support css */
+#supportTop {
+  width: 100%;
+  height: 320px;
+  background: url(../images/support/bg_img.png) no-repeat;
+}
+#supportTop .wrap {
+  width: 1160px;
+  margin: 0 auto;
+}
+.supportCenter {
+  padding-top: 22px;
+  line-height: 100px;
+  height: 100px;
+  font-size: 42px;
+  color: #fff;
+}
+.centerL {
+  float: left;
+  width: 544px;
+}
+.centerL h4 {
+  line-height: 29px;
+  height: 29;
+  font-size: 16px;
+  color: #939fa7;
+}
+.centerL p {
+  margin-top: 54px;
+  height: 32px;
+}
+.centerL .question,
+.centerL .myQuestion {
+  float: left;
+  height: 30px;
+  padding: 0 20px;
+  border: 1px solid #0687cb;
+  line-height: 30px;
+  font-size: 14px;
+  text-align: center;
+}
+.centerL .question {
+  margin-right: 13px;
+  background: #0687cb;
+  color: #fff;
+}
+.centerL .myQuestion {
+  color: #0687cb;
+}
+.centerL .question:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  /* 兼容IE6-9 */
+}
+.centerL .question:hover,
+.centerL .myQuestion:hover {
+  text-decoration: underline;
+}
+.centerR {
+  float: right;
+  margin-top: 22px;
+}
+.docSearch {
+  position: relative;
+  width: 278px;
+}
+.docSearch input {
+  width: 278px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 3px;
+  text-indent: 10px;
+  color: #84b8d1;
+  background: #fff;
+  opacity: 0.1;
+  filter: alpha(opacity=10);
+  /* 兼容IE6-9 */
+}
+.docSearch input[type="text"]:focus {
+  background: #fff;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  /* 兼容IE6-9 */
+}
+.docSearch i {
+  position: absolute;
+  right: 9px;
+  top: 8px;
+  width: 19px;
+  height: 18px;
+  background: url(../images/support/icon.png) no-repeat -30px 0;
+}
+.docSearch input[type="text"]:focus + i {
+  background: url(../images/support/icon.png) no-repeat 0 0;
+}
+.centerR p {
+  height: 36px;
+  line-height: 36px;
+  font-size: 12px;
+  color: #fff;
+}
+.centerR p span,
+.centerR p a {
+  margin-right: 4px;
+}
+.centerR p span {
+  color: #a7c4cd;
+}
+.centerR p a {
+  color: #fff;
+}
+.centerR p a:hover {
+  text-decoration: underline;
+}
+/* end support css */
+/* support css */
+#support {
+  width: 100%;
+  margin-top: 43px;
+}
+#support .wrap {
+  width: 1160px;
+}
+.hotQuestion {
+  float: left;
+  width: 740px;
+}
+.hotQuestion h3,
+.firstNew h3 {
+  height: 40px;
+  font: bold 22px/40px "微软雅黑";
+  border-bottom: 2px solid #0687cb;
+  color: #333;
+}
+.hotNav {
+  height: 49px;
+  line-height: 49px;
+  border-bottom: 1px solid #ddd;
+}
+.hotNav a {
+  float: left;
+  padding: 0 15px;
+  color: #333;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.hotNav .current,
+.hotNav a:hover {
+  color: #0687cb;
+  border-bottom-color: #0687cb;
+}
+.hotList {
+  margin-bottom: 63px;
+}
+.hotList li {
+  height: 48px;
+  line-height: 48px;
+  border-bottom: 1px solid #f7f7f7;
+}
+.hotList a {
+  display: block;
+  height: 48px;
+  color: #666;
+}
+.hotList a span {
+  float: left;
+  width: 620px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #666;
+  font-size: 14px;
+}
+.hotList a time {
+  float: right;
+  color: #999;
+}
+.hotList a:hover span,
+.hotList a:hover time {
+  color: #0687cb;
+}
+.hotList .more {
+  display: inline-block;
+}
+.hotList .more:hover {
+  text-decoration: underline;
+  color: #0687cb;
+}
+.firstNew {
+  float: right;
+  width: 380px;
+}
+.firstNew a span {
+  width: 266px;
+}
+/*  end support css */
